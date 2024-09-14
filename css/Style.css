@@ -1,0 +1,901 @@
+/* ________________________________________________general___________________________________________________ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(137, 137, 137, 0.174);
+    
+}
+
+
+/* ________________________________________________header____________________________________________________ */
+
+header{
+    position: relative;
+}
+
+.header_container{
+    position: absolute;
+    position: fixed;
+    width: 95%;
+    height: 80px;
+    background-color: white;
+    left: 40px;
+    top: 35px;
+    opacity: 0.9;
+    z-index: 20;
+}
+
+.h_head{
+    height: auto;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.h_img{
+    height: inherit;
+    float: left;
+    margin-left: 40px;
+}
+
+.h_ul{
+    float: right;
+}
+
+.h_ul li{
+    list-style: none;
+    display: inline-block;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    padding: 30px;
+}
+
+.h_ul li:hover{
+    background-color: rgb(241, 212, 176);
+}
+
+.h_ul li a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.h_ul li:hover .h_a{
+    color: white;
+}
+
+/* ________________________________________________h_body____________________________________________________ */
+
+.home{
+    background-image: url(../images/ddd.jpg);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.526);
+    position: absolute;
+    
+}
+
+.home_content{
+    position: absolute;
+    text-align: center;
+    left: 50vw;
+    top: 50vh;
+    transform: translate(-50% , -50%);
+}
+
+.home_h2{
+    color: white;
+    font-size: 60px;
+}
+
+.home_p{
+    font-size: 20px;
+    color: white;
+    margin: 15px 0px;
+    letter-spacing: 1.5px;
+}
+
+.home_button{
+    font-size: 17px;
+    height: 60px;
+    width: 140px;
+    margin: 20px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.home_button::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+    height: 0%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    transition: 0s;
+    opacity: 0;
+}
+
+.home_button:hover::after{
+    height: 100%;
+    opacity: .5;
+}
+
+.home-2{
+    background-color: #6195ff;
+}
+
+/* ________________________________________________Section_2_________________________________________________ */
+
+.wel_h2{
+    text-align: center;
+    margin-top: 200px;
+    font-size: 40px;
+}
+
+.wel_hr{
+    margin: auto;
+    width: 100px;
+    border: 2px solid;
+    margin-top: 20px;
+}
+
+.wel_con{
+    text-align: center;
+    left: 115px;
+    top: 100px;
+    width: 1300px;
+    position: relative;
+    overflow: auto;
+}
+
+.wel_d{
+    border: 1px solid;
+    width: 350px;
+    height: 250px;
+    text-align: center;
+    float: left;
+    margin: 30px;
+    position: relative;
+    
+}
+
+
+.wel_i{
+    padding-top: 20px;
+    font-size: 35px;
+    transition: color 0.5s;
+    color: rgba(23, 23, 23, 0.816);
+}
+
+.wel_dh{
+    padding-top: 20px;
+    text-transform: capitalize;
+    transition: color 0.5s;
+}
+
+.wel_dp{
+    padding: 10px;
+    padding-bottom: 40px;
+    transition: color 0.5s;
+    font-size: 18px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+.wel_d:hover .wel_dh{
+    color: white;
+}
+.wel_d:hover .wel_dp{
+    color: rgb(33, 33, 33);
+}
+.wel_d:hover .wel_i{
+    color: blue;
+}
+
+.wel_da{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(81, 81, 255);
+}
+
+.wel_d:after{
+    position: absolute;
+    content:"";
+
+    height: 0;
+    width: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.823);
+    opacity: 0.8;
+}
+
+.wel_d:hover:after{
+    height: 100%;
+    width: 100%;
+
+    transition: 1.5s;
+    z-index: -1;
+}
+
+.ends2{
+    height: 450px;
+    display: block;
+}
+
+/* ________________________________________________Section_3_________________________________________________ */
+
+.wor_con{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    background-color: rgba(127, 129, 129, 0.253);
+}
+
+.wor_h2{
+    font-size:40px ;
+    padding-top: 50px;
+}
+
+.wor_par{
+    position: absolute;
+    left: 11vw;
+    width: 80%;
+    top: 100px;
+    
+}
+
+.wor_d{
+    position: relative;
+    float: left;
+    margin: 40px;
+    height: 350px;
+    width: 300px;
+    background-image: url(../images/company.png);
+    text-align: center;
+}
+
+.layer{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.72);
+    visibility: hidden;
+}
+
+.layer_h{
+    font-size: 35px;
+    color: white;
+    margin-top: 40px;
+}
+
+.layer_p{
+    font-size: 25px;
+    color: white;
+    margin-top: 30px;
+}
+
+.layer_a{
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.layer_i{
+    color: rgb(81, 120, 18);
+    margin-top: 60px;
+}
+
+.wor_d:hover .layer{
+    visibility: visible;
+    transition: 2s;
+}
+
+.ends3{
+    display: block;
+    height: 1000px;
+}
+
+/* ________________________________________________Section_4_________________________________________________ */
+
+.we{
+    width: 100%;
+    height: 110vh;
+}
+
+.we-h{
+    padding-top: 150px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.we-con{
+    width:80%;
+    margin: auto;
+    height:1000px;
+    margin-top: 80px;
+}
+
+.we-d{
+    width: 30%;
+    float: left;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    padding: 30px 15px 30px 70px;
+    position: relative;
+    margin: 15px;
+}
+
+.we-i{
+    position: absolute;
+    left: 15px;
+    top: 26px;
+    color: #6195ff;
+    font-size: 30px;
+}
+
+.we-dh{
+    padding-bottom: 20px;
+    font-size: 30px;
+    color: black;
+    transition: color .5s;
+}
+
+
+.we-d:hover .we-dh{
+    color: white;
+}
+.we-d:hover .we-i{
+    color: blue;
+}
+.we-d:hover .we-dp{
+    color: rgb(33, 33, 33);
+}
+
+.we-p{
+    font-size: 18px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+.we-d:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+    
+}
+
+.we-d:hover::after{
+    height: 100%;
+    width: 100%;
+    transition: 1.5s;
+    z-index: -1;
+}
+
+.ends4{
+    display: block;
+    height: 100px;
+}
+
+/* ________________________________________________Section_5_________________________________________________ */
+
+.why{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(127, 129, 129, 0.253);
+}
+
+.why-con{
+    width: 80%;
+    margin: auto;
+}
+
+.why-d{
+    width: 700px;
+    height: 500px;
+    float: left;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.why-hr{
+    width: 100px;
+    border: 2px solid;
+    margin-top: 20px;
+}
+
+.why-dh{
+    font-size: 40px;
+}
+
+.why-dp1{
+    padding: 30px;
+    font-size: 20px;
+}
+
+.why-i{
+    display: inline;
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+
+.why-dp2{
+    display: inline;
+    font-size: 17px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+.why-img{
+    float: left;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 150px;
+    overflow: auto;
+}
+
+.why-dimg{
+    display: block;
+}
+
+.cir{
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    background-color: rgba(66, 66, 66, 0.565);
+    float: left;
+    margin: 20px;
+}
+
+.cir-s{
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    background-color: rgba(66, 66, 66, 0.565);
+    float: left;
+    margin: 20px;
+    margin-left: 150px;
+    background-color: blue;
+}
+
+.cir:hover{
+    background-color: blue;
+}
+
+.ends5{
+    display: block;
+    height: 100px;
+}
+
+/* ________________________________________________Section_6_________________________________________________ */
+
+
+.num{
+    position: relative;
+    background-image: url(../images/download.jpg);
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.num-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.612);
+    position: absolute;
+}
+
+.num-con{
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+    text-align: center;
+    padding-top: 130px;
+}
+
+.num-d{
+    float: left;
+    width: 25%;
+}
+
+.num-i{
+    color: #6195ff;
+}
+
+.num-dh{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 15px 0px;
+}
+
+.num-dp{
+    color: white;
+    font-size: 20px;
+}
+
+/* ________________________________________________Section_7_________________________________________________ */
+.tab{
+    width: 100%;
+    height: 100vh;
+}
+
+.tab-h{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+}
+
+.tab-con{
+    width: 80%;
+    overflow: auto;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.mid-tab{
+    margin: 0% 5%;
+}
+
+.tab-d{
+    height: 380px;
+    width: 30%;
+    border: 1px solid black;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.tab-dh{
+    font-size: 30px;
+    padding-top: 25px;
+    transition: color .5s;
+}
+
+.tab-dd{
+    height: 100px;
+    width: 100px;
+    border: 2px solid rgb(21, 38, 232);
+    margin: 25px auto;
+    border-radius: 100%;
+    text-align: center;
+}
+
+.tab-ddh{
+    padding-top: 20px;
+    font-size: 30px;
+    transition: color .5s;
+}
+.tab-ddp{
+    font-size: large;
+    transition: color .5s;
+}
+
+.tab-d:hover .tab-ddh{
+    color: red;
+}
+
+.tab-d:hover .tab-dh{
+    color: red;
+}
+
+.tab-d:hover .tab-ddp{
+    color: red;
+}
+
+
+.tab-dp{
+    word-spacing: 2px;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.tab-db{
+    margin-top: 25px;
+    font-size: 18px;
+    box-sizing: content-box;
+    border-radius: 30px;
+    padding: 10px;
+    border-color: rgb(21, 38, 232);
+}
+
+.tab-d::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 0px;
+    width: 100%;
+    background-color: black;
+    opacity: .5;
+    transition: 1s;
+}
+
+.tab-d:hover::after{
+    height: 100%;
+    
+}
+
+/* ________________________________________________Section_8_________________________________________________ */
+
+.img1{
+    position: relative;
+    background-image: url(../images/download.jpg);
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.img1-con{
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+    padding-top: 130px;
+}
+
+.img1-d{
+    width: 50%;
+    height: 150px;
+    float: left;
+}
+
+.img1-dd{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    float: left;
+    display: inline;
+    border: 2px solid black;
+    background-image: url(../images/company.png);
+    background-size: cover;
+}
+
+.img1-dh{
+    color: white;
+}
+
+.img1-dp{
+    font-size: 17px;
+    color: white;
+}
+
+.img1-ds{
+    color: white;
+    font-size: 17px;
+    letter-spacing: 1px;
+    
+}
+
+/* ________________________________________________Section_9_________________________________________________ */
+
+.team{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(127, 129, 129, 0.253);
+}
+
+.team-h{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+}
+
+.team-con{
+    width: 80%;
+    margin: auto;
+    overflow: auto;   
+    margin-top: 50px;
+}
+
+.team-d{
+    float: left;
+    width: 30%;
+    height: 350px;
+    text-align: center;
+    border: 1px solid black;
+    position: relative;
+}
+
+.team-c{
+    margin: 0% 5% ;
+}
+
+.team-img{
+    height: 70%;
+    width: 80%;
+    background-image: url(../images/company.png);
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.team-overlay{
+    background-color: rgba(0, 0, 0, 0.498);
+    overflow: auto;
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.team-i{
+    font-size: 30px;
+    color: white;
+    background-color: #6195ff;
+    height: 50px;
+    width: 50px;
+    margin-left: 230px;
+    padding-top: 10px;
+}
+
+.team-d:hover .team-overlay{
+    opacity: 1;
+}
+
+.team-dh{
+    font-size: 30px;
+    transition: color 1s;
+}
+
+.team-dp{
+    font-size: 17px;
+    transition: color 1s;
+}
+
+.team-d:hover .team-dh{
+    color: #6195ff;
+}
+
+.team-d:hover .team-dp{
+    color: #6195ff;
+}
+
+.team-d::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.386);
+    transition: 1s;
+}
+
+.team-d:hover::after{
+    height: 100%;
+}
+
+/* ________________________________________________Section_10_________________________________________________ */
+
+.rec{
+    height: 120vh;
+    width: 100%;
+}
+
+.rec-h{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+}
+
+.rec-con{
+    margin: auto;
+    width: 85%;
+    overflow: auto;
+    margin-top: 100px;
+}
+
+.rec-d{
+    float: left;
+    width: 30%;
+    border: 1px solid black;
+    padding-left: 20px;
+    position: relative;
+    height: 550px;
+}
+
+.rec-c{
+    margin: 0% 5%;
+}
+
+.rec-ul{
+    list-style: none;
+}
+
+.rec-li{
+    display: inline-block;
+    margin: 20px 0px;
+}
+
+.rec-dh{
+    padding: 20px 0px;
+    font-size: 30px;
+}
+
+.rec-dp{
+    font-size: 17px;
+    letter-spacing: 1px;
+    padding: 20px 0px;
+}
+
+.rec-a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #6195ff;
+}
+
+.rec-d::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+    height: 0%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    transition: 1s;
+    opacity: 0;
+}
+
+.rec-d:hover::after{
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+}
+
+
+
+/* ________________________________________________Section_11_________________________________________________ */
+
+.fo{
+    width: 100%;
+    height: 40vh;
+    background-color: gray;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.fo-img{
+    display: block;
+    margin: auto;
+}
+
+.fo-i{
+    font-size: 25px;
+    margin: 10px;
+    color:white;
+    height: 50px;
+    width: 50px;
+    background-color: #6195ff;
+    padding-top: 13px;
+    border-radius: 100%;
+}
